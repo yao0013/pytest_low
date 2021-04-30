@@ -1,0 +1,62 @@
+
+
+    def teardown_class(self):
+        # ivs.interface_vars = ivs.backup_vars
+        test_cases = $testsuite_restore
+        for test_case in test_cases:
+            log.info(Template("teardown_class 正在执行：$$name用例").substitute(name=test_case['casename']))
+            try:
+                test_case = var_add_random_str(test_case)
+                test_case = datetime_translate(test_case)
+                parse_case_vars(test_case, ivs)
+                test_case = VarReplace(test_case, [ivs, init_object]).var_replace()
+            except Exception as e:
+                log.error(Template("teardown_class Exception returned on var_replace,error info: $$e").substitute(e=e))
+
+            api_info = {
+                "url": test_case['url'],
+                "method": test_case['method'],
+                "params": test_case['params'],
+                "header": test_case['header']
+            }
+
+            try:
+                res = ApiHandler(api_info).api_request()
+            except Exception as e:
+                log.error(Template("teardown_class api request fail,error info: $$e").substitute(e=e))
+                RS.append_row(file_name, [test_case['casename'], test_case['url'], test_case['method'],
+                        test_case['params'], test_case['header'], "request error"], "fail")
+                # check.equal(1, 2, "teardown_class Exception returned on API request")
+                continue
+            if res.status_code != 200:
+                log.error(Template("teardown_class api request fail, the response text is: $$content").substitute(
+                    content=res.text))
+                RS.append_row(file_name, [test_case['casename'], test_case['url'], test_case['method'], test_case['params'],
+                                      test_case['header'], res.text, res.status_code, res.elapsed.total_seconds()],
+                          "fail")
+                #check.equal(1, 2, "teardown_class api response status_code not equal 200, fail")
+                continue
+
+            try:
+                res_json = res.json()
+            except Exception as e:
+                log.error(Template("teardown_class 响应内容格式化为json失败，错误信息: $$e").substitute(e=e))
+                RS.append_row(file_name, [test_case['casename'], test_case['url'], test_case['method'], test_case['params'],
+                                      test_case['header'], res.text, res.status_code, res.elapsed.total_seconds()],
+                          "fail")
+                continue
+
+            if test_case.get('interface_var'):
+                var_dict = parse_interface_var(test_case['interface_var'], res_json)
+                for k, v in var_dict.items():
+                    ivs.interface_vars[k] = v
+            log.debug(Template("teardown_class interface vars: $$interface_var").substitute(
+                interface_var=ivs.interface_vars))
+            RS.append_row(file_name, [test_case['casename'], test_case['url'], test_case['method'], test_case['params'],
+                                      test_case['header'], res.text, res.status_code, res.elapsed.total_seconds()],
+                          "pass")
+
+            if test_case.get('wait_time'):
+                wait_time = float(test_case['wait_time'])
+                log.info("用例设置了等待时间，等待{}秒,请等待。。。".format(str(wait_time)))
+                time.sleep(wait_time)

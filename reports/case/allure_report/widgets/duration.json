@@ -1,0 +1,231 @@
+[ {
+  "uid" : "68d023a27752fc9a",
+  "name" : "test_创建pvc",
+  "time" : {
+    "start" : 1619769360776,
+    "stop" : 1619769360898,
+    "duration" : 122
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0d6247d0967cb26",
+  "name" : "test_查看容器组细节",
+  "time" : {
+    "start" : 1619769362705,
+    "stop" : 1619769364932,
+    "duration" : 2227
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a65b5d092613bc92",
+  "name" : "test_停止无状态应用编排",
+  "time" : {
+    "start" : 1619769362296,
+    "stop" : 1619769362419,
+    "duration" : 123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5049bb595ef43837",
+  "name" : "test_查看Yaml",
+  "time" : {
+    "start" : 1619769359612,
+    "stop" : 1619769360762,
+    "duration" : 1150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9bc6ec23639cc402",
+  "name" : "test_查看PVC事件",
+  "time" : {
+    "start" : 1619769361168,
+    "stop" : 1619769361284,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d51e44ec63a4a656",
+  "name" : "test_恢复无状态应用编排",
+  "time" : {
+    "start" : 1619769362428,
+    "stop" : 1619769362552,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89d8858d1c027508",
+  "name" : "test_查看PV列表",
+  "time" : {
+    "start" : 1619769361429,
+    "stop" : 1619769361543,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cab5493081b90ec8",
+  "name" : "test_查看无状态应用yaml",
+  "time" : {
+    "start" : 1619769362200,
+    "stop" : 1619769362288,
+    "duration" : 88
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8eb37ea893d015ba",
+  "name" : "test_编辑PV",
+  "time" : {
+    "start" : 1619769361822,
+    "stop" : 1619769361950,
+    "duration" : 128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "556284e60eb46f8e",
+  "name" : "test_查看PV基本信息",
+  "time" : {
+    "start" : 1619769361551,
+    "stop" : 1619769361670,
+    "duration" : 119
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe98a5bb645d0545",
+  "name" : "test_查看容器组列表",
+  "time" : {
+    "start" : 1619769362559,
+    "stop" : 1619769362696,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "24b07d59c57576ef",
+  "name" : "test_新增命名空间",
+  "time" : {
+    "start" : 1619769356299,
+    "stop" : 1619769359603,
+    "duration" : 3304
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af8439250d3fff64",
+  "name" : "test_用户登录获取token",
+  "time" : {
+    "start" : 1619769345474,
+    "stop" : 1619769345540,
+    "duration" : 66
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba8e085a917ba56d",
+  "name" : "test_查看容器组监控数据",
+  "time" : {
+    "start" : 1619769364939,
+    "stop" : 1619769365052,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17fc7fc074f31eff",
+  "name" : "test_查看PV事件",
+  "time" : {
+    "start" : 1619769361677,
+    "stop" : 1619769361814,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a5d085f59863185",
+  "name" : "test_编辑无状态应用",
+  "time" : {
+    "start" : 1619769362093,
+    "stop" : 1619769362194,
+    "duration" : 101
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e261e62a567e411a",
+  "name" : "test_查看PVC列表",
+  "time" : {
+    "start" : 1619769360907,
+    "stop" : 1619769361002,
+    "duration" : 95
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ce89642de1ff118",
+  "name" : "test_删除容器组",
+  "time" : {
+    "start" : 1619769365212,
+    "stop" : 1619769365370,
+    "duration" : 158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7d5783a2dc75c90",
+  "name" : "test_查看无状态应用列表",
+  "time" : {
+    "start" : 1619769361961,
+    "stop" : 1619769362081,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3392d0790864ba6f",
+  "name" : "test_查看容器组的yaml",
+  "time" : {
+    "start" : 1619769365059,
+    "stop" : 1619769365204,
+    "duration" : 145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "331ec75b2f3c550e",
+  "name" : "test_查看PVC基本信息",
+  "time" : {
+    "start" : 1619769361010,
+    "stop" : 1619769361161,
+    "duration" : 151
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7e247c28a7e26a2",
+  "name" : "test_新增pv",
+  "time" : {
+    "start" : 1619769361290,
+    "stop" : 1619769361421,
+    "duration" : 131
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d23a81ce593ca962",
+  "name" : "test_查看命名空间",
+  "time" : {
+    "start" : 1619769351324,
+    "stop" : 1619769356282,
+    "duration" : 4958
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

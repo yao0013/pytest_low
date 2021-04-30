@@ -1,0 +1,159 @@
+{
+  "uid" : "d23a81ce593ca962",
+  "name" : "test_查看命名空间",
+  "fullName" : "testcase.auto_create.test_容器服务.TestClass#test_查看命名空间",
+  "historyId" : "3980d5762c082435e67b5bf8c3fb0602",
+  "time" : {
+    "start" : 1619769351324,
+    "stop" : 1619769356282,
+    "duration" : 4958
+  },
+  "description" : "查看命名空间,params:{'pageNumber': 1, 'limit': 10, 'clusterId': '{clusterId}', 'detail': 'true'}",
+  "descriptionHtml" : "<p>查看命名空间,params:{'pageNumber': 1, 'limit': 10, 'clusterId': '{clusterId}', 'detail': 'true'}</p>\n",
+  "status" : "failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1619769345549,
+      "stop" : 1619769351322,
+      "duration" : 5773
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1619769344865,
+      "stop" : 1619769345472,
+      "duration" : 607
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1619769365371,
+      "stop" : 1619769365647,
+      "duration" : 276
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "命名空间"
+  }, {
+    "name" : "story",
+    "value" : "test_查看命名空间"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=20001)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.auto_create"
+  }, {
+    "name" : "suite",
+    "value" : "test_容器服务"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "vm"
+  }, {
+    "name" : "thread",
+    "value" : "11924-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.auto_create.test_容器服务"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "f52f5f60771eb901",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766190614,
+          "stop" : 1619766195172,
+          "duration" : 4558
+        }
+      }, {
+        "uid" : "3c7ca4734ddf7b0a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766039783,
+          "stop" : 1619766041011,
+          "duration" : 1228
+        }
+      }, {
+        "uid" : "f86b2900bfec8bd7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619765813811,
+          "stop" : 1619765815222,
+          "duration" : 1411
+        }
+      }, {
+        "uid" : "593467da9a87d061",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619765473149,
+          "stop" : 1619765474279,
+          "duration" : 1130
+        }
+      } ]
+    },
+    "tags" : [ "run(order=20001)" ]
+  },
+  "source" : "d23a81ce593ca962.json",
+  "parameterValues" : [ ]
+}

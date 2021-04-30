@@ -1,0 +1,138 @@
+
+
+    @allure.feature("$module")
+    @allure.story("$casename")
+    @allure.description("$description,params:$params")
+    @pytest.mark.run(order=$order)
+    def $casename(self):
+        test_case = $testcase
+        # ivs.interface_vars = ivs.backup_vars
+        log.info("="*60)
+        log.info(Template("正在执行：$$name").substitute(name=test_case['casename']))
+
+        init_cases = $init_case
+        restore_cases = $restore_case
+
+        # 执行测试用例中的初始化步骤
+        if init_cases:
+            for init_case in init_cases:
+                log.info(Template("执行用例中的初始化接口：$$name").substitute(name=init_case['url']))
+                init_case = VarReplace(init_case, [ivs, init_object]).var_replace()
+                self.exec_init_case(init_case)
+
+        test_case = var_add_random_str(test_case)
+        test_case = datetime_translate(test_case)
+        parse_case_vars(test_case, ivs)
+        dyparam_parse(test_case, ivs)
+        test_case = VarReplace(test_case, [ivs, init_object]).var_replace()
+
+        api_info = {
+            "url": test_case['url'],
+            "method": test_case['method'],
+            "params": test_case['params'],
+            "header": test_case['header']
+        }
+
+        try:
+            iteration = int(test_case['iteration'])
+        except Exception as e:
+            log.error(Template("iteration to integer failed,set iteration to 1,error info: $$e").substitute(e=e))
+            iteration = 1
+        for index in range(0, iteration):
+            flag = True
+            log.info(Template("execute $$index times request").substitute(index=index + 1))
+            res = ApiHandler(api_info).api_request()
+            try:
+                res_json = res.json()
+            except Exception as e:
+                log.error(Template("api请求响应转换为json失败,错误信息: $$e").substitute(e=e))
+                RS.append_row(file_name, [test_case['casename'], test_case['url'], test_case['method'],
+                        test_case['params'], test_case['header'], "request error"], "fail")
+                check.equal(1, 2, msg=Template("api请求响应转换为json失败,接口返回内容：$$res,错误信息：$$e").substitute(res=res.text, e=e))
+                continue
+
+            if test_case.get("verify_fields"):
+                msg = eut.check_verify_fields(test_case["verify_fields"], res_json)
+                if msg:
+                    log.error(Template("字段校验失败，失败信息：$$msg").substitute(msg=msg))
+                    flag = False
+                    check.equal(1, 2, msg=msg)
+                else:
+                    log.info(Template("字段校验成功").substitute())
+
+            if test_case.get("res_text"):
+                msg = eut.check_response_text(test_case['res_text'], res_json)
+                if msg:
+                    log.error(Template("响应内容校验失败，失败信息：$$msg").substitute(msg=msg))
+                    flag = False
+                    check.equal(1, 2, msg=msg)
+                else:
+                    log.info(Template("响应内容校验成功").substitute())
+
+            if test_case.get("res_header"):
+                msg = eut.check_response_header(test_case['res_header'], res.headers)
+                if msg:
+                    log.error(Template("响应头校验失败，失败信息：$$msg").substitute(msg=msg))
+                    flag = False
+                    check.equal(1, 2, msg=msg)
+                else:
+                    log.info(Template("响应头校验成功").substitute())
+
+            if test_case.get("status_code"):
+                msg = eut.check_status_code(test_case['status_code'], res.status_code)
+                if msg:
+                    log.error(Template("响应状态码校验失败，失败信息：$$msg").substitute(msg=msg))
+                    flag = False
+                    check.equal(1, 2, msg=msg)
+                else:
+                    log.info(Template("响应状态码校验成功").substitute())
+
+            if test_case.get("res_time"):
+                msg = eut.check_response_time(test_case['res_time'], res.elapsed.total_seconds())
+                if msg:
+                    log.error(Template("响应时间校验失败，失败信息：$$msg").substitute(msg=msg))
+                    flag = False
+                    check.equal(1, 2, msg=msg)
+                else:
+                    log.info(Template("响应时间校验成功").substitute())
+
+            if test_case.get("expression"):
+                msg = eut.check_pyexpression(test_case['expression'], res_json)
+                if msg:
+                    log.error(Template("py表达式校验失败，失败信息：$$msg").substitute(msg=msg))
+                    flag = False
+                    check.equal(1, 2, msg=msg)
+                else:
+                    log.info(Template("py表达式校验成功").substitute())
+            if test_case.get("db_verify"):
+                msg = eut.check_db_verify(test_case['db_verify'])
+                if msg:
+                    log.error(Template("数据库验证失败，失败信息：$$msg").substitute(msg=msg))
+                    flag = False
+                    check.equal(1, 2, msg=msg)
+                else:
+                    log.info(Template("数据库验证成功").substitute())
+
+            if flag:
+                RS.append_row(file_name, [test_case['casename'], test_case['url'], test_case['method'], test_case['params'],
+                                      test_case['header'], res.text, res.status_code, res.elapsed.total_seconds()],
+                          "pass")
+            else:
+                RS.append_row(file_name, [test_case['casename'], test_case['url'], test_case['method'], test_case['params'],
+                                      test_case['header'], res.text, res.status_code, res.elapsed.total_seconds()],
+                          "fail")
+            if test_case.get('interface_var'):
+                var_dict = parse_interface_var(test_case['interface_var'], res_json)
+                for k, v in var_dict.items():
+                    ivs.interface_vars[k] = v
+
+            if test_case.get('wait_time'):
+                wait_time = float(test_case['wait_time'])
+                log.info("用例设置了等待时间，等待{}秒,请等待。。。".format(str(wait_time)))
+                time.sleep(wait_time)
+
+        # 执行测试用例中的数据恢复步骤
+        if restore_cases:
+            for restore_case in restore_cases:
+                restore_case = VarReplace(restore_case, [ivs, init_object]).var_replace()
+                self.exec_restore_case(restore_case)

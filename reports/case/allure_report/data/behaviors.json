@@ -1,0 +1,412 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_用户登录获取token",
+    "uid" : "af8439250d3fff64",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1619769345474,
+      "stop" : 1619769345540,
+      "duration" : 66
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "命名空间",
+    "children" : [ {
+      "name" : "test_查看命名空间",
+      "children" : [ {
+        "name" : "test_查看命名空间",
+        "uid" : "d23a81ce593ca962",
+        "parentUid" : "a3b30ff4f8ccf50d36d853c5a6e25a44",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619769351324,
+          "stop" : 1619769356282,
+          "duration" : 4958
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a3b30ff4f8ccf50d36d853c5a6e25a44"
+    }, {
+      "name" : "test_新增命名空间",
+      "children" : [ {
+        "name" : "test_新增命名空间",
+        "uid" : "24b07d59c57576ef",
+        "parentUid" : "158ee44a35e4673b2d87c8279b321f4a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769356299,
+          "stop" : 1619769359603,
+          "duration" : 3304
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "158ee44a35e4673b2d87c8279b321f4a"
+    }, {
+      "name" : "test_查看Yaml",
+      "children" : [ {
+        "name" : "test_查看Yaml",
+        "uid" : "5049bb595ef43837",
+        "parentUid" : "c948c6d2d27acfe4de18b2523f977f4e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769359612,
+          "stop" : 1619769360762,
+          "duration" : 1150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c948c6d2d27acfe4de18b2523f977f4e"
+    } ],
+    "uid" : "8f1ba765cff6b4fdce21905be920a2ad"
+  }, {
+    "name" : "pvc",
+    "children" : [ {
+      "name" : "test_创建pvc",
+      "children" : [ {
+        "name" : "test_创建pvc",
+        "uid" : "68d023a27752fc9a",
+        "parentUid" : "ea4591458e7820ffd240b298265ca128",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619769360776,
+          "stop" : 1619769360898,
+          "duration" : 122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ea4591458e7820ffd240b298265ca128"
+    }, {
+      "name" : "test_查看PVC列表",
+      "children" : [ {
+        "name" : "test_查看PVC列表",
+        "uid" : "e261e62a567e411a",
+        "parentUid" : "3bb1d19ae179f7c0ccbf8f66e42ac95e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769360907,
+          "stop" : 1619769361002,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3bb1d19ae179f7c0ccbf8f66e42ac95e"
+    }, {
+      "name" : "test_查看PVC基本信息",
+      "children" : [ {
+        "name" : "test_查看PVC基本信息",
+        "uid" : "331ec75b2f3c550e",
+        "parentUid" : "cecda48470b3f30295492e43a01dd081",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619769361010,
+          "stop" : 1619769361161,
+          "duration" : 151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cecda48470b3f30295492e43a01dd081"
+    }, {
+      "name" : "test_查看PVC事件",
+      "children" : [ {
+        "name" : "test_查看PVC事件",
+        "uid" : "9bc6ec23639cc402",
+        "parentUid" : "439a332debf3adf409a048a401c43b77",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769361168,
+          "stop" : 1619769361284,
+          "duration" : 116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "439a332debf3adf409a048a401c43b77"
+    } ],
+    "uid" : "6d57dad83c5e4c5f3b24fa1b519875bd"
+  }, {
+    "name" : "pv",
+    "children" : [ {
+      "name" : "test_新增pv",
+      "children" : [ {
+        "name" : "test_新增pv",
+        "uid" : "e7e247c28a7e26a2",
+        "parentUid" : "a11470ba9308563746fc8eef6fd788b3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619769361290,
+          "stop" : 1619769361421,
+          "duration" : 131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a11470ba9308563746fc8eef6fd788b3"
+    }, {
+      "name" : "test_查看PV列表",
+      "children" : [ {
+        "name" : "test_查看PV列表",
+        "uid" : "89d8858d1c027508",
+        "parentUid" : "3e54bfa5f34ddef7b76585bff4a2c14a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769361429,
+          "stop" : 1619769361543,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3e54bfa5f34ddef7b76585bff4a2c14a"
+    }, {
+      "name" : "test_查看PV基本信息",
+      "children" : [ {
+        "name" : "test_查看PV基本信息",
+        "uid" : "556284e60eb46f8e",
+        "parentUid" : "ee16c6ac933e38c4d285d480104344db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769361551,
+          "stop" : 1619769361670,
+          "duration" : 119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ee16c6ac933e38c4d285d480104344db"
+    }, {
+      "name" : "test_查看PV事件",
+      "children" : [ {
+        "name" : "test_查看PV事件",
+        "uid" : "17fc7fc074f31eff",
+        "parentUid" : "5ff8754d4d540d6c8f674e33519a41bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769361677,
+          "stop" : 1619769361814,
+          "duration" : 137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5ff8754d4d540d6c8f674e33519a41bf"
+    }, {
+      "name" : "test_编辑PV",
+      "children" : [ {
+        "name" : "test_编辑PV",
+        "uid" : "8eb37ea893d015ba",
+        "parentUid" : "8f107305a6a1ead891abe147a4e12f29",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769361822,
+          "stop" : 1619769361950,
+          "duration" : 128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8f107305a6a1ead891abe147a4e12f29"
+    } ],
+    "uid" : "104768d824629a9588d9601100e67779"
+  }, {
+    "name" : "无状态应用",
+    "children" : [ {
+      "name" : "test_查看无状态应用列表",
+      "children" : [ {
+        "name" : "test_查看无状态应用列表",
+        "uid" : "f7d5783a2dc75c90",
+        "parentUid" : "d2e6e91445631f2474130c7655957894",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769361961,
+          "stop" : 1619769362081,
+          "duration" : 120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d2e6e91445631f2474130c7655957894"
+    }, {
+      "name" : "test_编辑无状态应用",
+      "children" : [ {
+        "name" : "test_编辑无状态应用",
+        "uid" : "3a5d085f59863185",
+        "parentUid" : "ff673199872f1dcecbcc7edbd8310e8d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619769362093,
+          "stop" : 1619769362194,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ff673199872f1dcecbcc7edbd8310e8d"
+    }, {
+      "name" : "test_查看无状态应用yaml",
+      "children" : [ {
+        "name" : "test_查看无状态应用yaml",
+        "uid" : "cab5493081b90ec8",
+        "parentUid" : "e34405bef1a1041cc5d2c390f906a7e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769362200,
+          "stop" : 1619769362288,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e34405bef1a1041cc5d2c390f906a7e3"
+    }, {
+      "name" : "test_停止无状态应用编排",
+      "children" : [ {
+        "name" : "test_停止无状态应用编排",
+        "uid" : "a65b5d092613bc92",
+        "parentUid" : "d9e6f4d3e5b4cd156121a8087271dff0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769362296,
+          "stop" : 1619769362419,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d9e6f4d3e5b4cd156121a8087271dff0"
+    }, {
+      "name" : "test_恢复无状态应用编排",
+      "children" : [ {
+        "name" : "test_恢复无状态应用编排",
+        "uid" : "d51e44ec63a4a656",
+        "parentUid" : "e16295c0739262ce944373c25b40a275",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769362428,
+          "stop" : 1619769362552,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e16295c0739262ce944373c25b40a275"
+    } ],
+    "uid" : "6bf0116493e643bebc741273aac2dde4"
+  }, {
+    "name" : "容器组",
+    "children" : [ {
+      "name" : "test_查看容器组列表",
+      "children" : [ {
+        "name" : "test_查看容器组列表",
+        "uid" : "fe98a5bb645d0545",
+        "parentUid" : "e1e97d70ecd15459d7f5828d4acfa0ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769362559,
+          "stop" : 1619769362696,
+          "duration" : 137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e1e97d70ecd15459d7f5828d4acfa0ef"
+    }, {
+      "name" : "test_查看容器组细节",
+      "children" : [ {
+        "name" : "test_查看容器组细节",
+        "uid" : "e0d6247d0967cb26",
+        "parentUid" : "99f63c356cf67d6571d5faac334043e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769362705,
+          "stop" : 1619769364932,
+          "duration" : 2227
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "99f63c356cf67d6571d5faac334043e8"
+    }, {
+      "name" : "test_查看容器组监控数据",
+      "children" : [ {
+        "name" : "test_查看容器组监控数据",
+        "uid" : "ba8e085a917ba56d",
+        "parentUid" : "c735fb996abe3519e3d6a40d56c812b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769364939,
+          "stop" : 1619769365052,
+          "duration" : 113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c735fb996abe3519e3d6a40d56c812b2"
+    }, {
+      "name" : "test_查看容器组的yaml",
+      "children" : [ {
+        "name" : "test_查看容器组的yaml",
+        "uid" : "3392d0790864ba6f",
+        "parentUid" : "afd38247d226b44dce7751b2a6f7582b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769365059,
+          "stop" : 1619769365204,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "afd38247d226b44dce7751b2a6f7582b"
+    }, {
+      "name" : "test_删除容器组",
+      "children" : [ {
+        "name" : "test_删除容器组",
+        "uid" : "8ce89642de1ff118",
+        "parentUid" : "3f3a4d97ac8898189eb95ffd381859b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619769365212,
+          "stop" : 1619769365370,
+          "duration" : 158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3f3a4d97ac8898189eb95ffd381859b8"
+    } ],
+    "uid" : "e7a862f1d8e9515bd8d5391f75745e6c"
+  } ]
+}

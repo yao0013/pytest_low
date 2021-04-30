@@ -1,0 +1,159 @@
+{
+  "uid" : "3a5d085f59863185",
+  "name" : "test_编辑无状态应用",
+  "fullName" : "testcase.auto_create.test_容器服务.TestClass#test_编辑无状态应用",
+  "historyId" : "c1a0f7ec0f06d7501448cd27751e7d08",
+  "time" : {
+    "start" : 1619769362093,
+    "stop" : 1619769362194,
+    "duration" : 101
+  },
+  "description" : "编辑无状态应用,params:{'id': 'autoinitaddwztyy', 'namespaceId': '{namespace_id}', 'data': {'name': 'aaa', 'namespaceId': '{namespace_id}', 'scale': 2, 'image': 'nginx', 'environment': [], 'ports': [], 'imagePullPolicy': 'IfNotPresent', 'privileged': 'false', 'allowPrivilegeEscalation': 'false'}}",
+  "descriptionHtml" : "<p>编辑无状态应用,params:{'id': 'autoinitaddwztyy', 'namespaceId': '{namespace_id}', 'data': {'name': 'aaa', 'namespaceId': '{namespace_id}', 'scale': 2, 'image': 'nginx', 'environment': [], 'ports': [], 'imagePullPolicy': 'IfNotPresent', 'privileged': 'false', 'allowPrivilegeEscalation': 'false'}}</p>\n",
+  "status" : "failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1619769345549,
+      "stop" : 1619769351322,
+      "duration" : 5773
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1619769344865,
+      "stop" : 1619769345472,
+      "duration" : 607
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1619769365371,
+      "stop" : 1619769365647,
+      "duration" : 276
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "无状态应用"
+  }, {
+    "name" : "story",
+    "value" : "test_编辑无状态应用"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=20015)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.auto_create"
+  }, {
+    "name" : "suite",
+    "value" : "test_容器服务"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "vm"
+  }, {
+    "name" : "thread",
+    "value" : "11924-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.auto_create.test_容器服务"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 5,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "e8966f3503c19e88",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766198745,
+          "stop" : 1619766198828,
+          "duration" : 83
+        }
+      }, {
+        "uid" : "cbb30bae1039406c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766044474,
+          "stop" : 1619766044580,
+          "duration" : 106
+        }
+      }, {
+        "uid" : "c33f5f0e42bd89f1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619765818746,
+          "stop" : 1619765818850,
+          "duration" : 104
+        }
+      }, {
+        "uid" : "47abe38bf678f118",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619765483304,
+          "stop" : 1619765483387,
+          "duration" : 83
+        }
+      } ]
+    },
+    "tags" : [ "run(order=20015)" ]
+  },
+  "source" : "3a5d085f59863185.json",
+  "parameterValues" : [ ]
+}

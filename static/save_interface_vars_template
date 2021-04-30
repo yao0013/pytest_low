@@ -1,0 +1,10 @@
+class InterfaceVars(object):
+    def __init__(self):
+        self.interface_vars = $testsuite_localvars
+        self.backup_vars = {}
+
+
+ivs = InterfaceVars()
+
+
+class TestClass(object):

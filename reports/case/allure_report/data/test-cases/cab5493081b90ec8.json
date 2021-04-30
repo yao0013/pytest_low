@@ -1,0 +1,155 @@
+{
+  "uid" : "cab5493081b90ec8",
+  "name" : "test_查看无状态应用yaml",
+  "fullName" : "testcase.auto_create.test_容器服务.TestClass#test_查看无状态应用yaml",
+  "historyId" : "0d4aff0ee269deda5f9b6f3f05b7856d",
+  "time" : {
+    "start" : 1619769362200,
+    "stop" : 1619769362288,
+    "duration" : 88
+  },
+  "description" : "查看无状态应用yaml,params:{'id': 'autoinitaddwztyy', 'namespaceId': '{namespace_id}'}",
+  "descriptionHtml" : "<p>查看无状态应用yaml,params:{'id': 'autoinitaddwztyy', 'namespaceId': '{namespace_id}'}</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1619769345549,
+      "stop" : 1619769351322,
+      "duration" : 5773
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1619769344865,
+      "stop" : 1619769345472,
+      "duration" : 607
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1619769365371,
+      "stop" : 1619769365647,
+      "duration" : 276
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "无状态应用"
+  }, {
+    "name" : "story",
+    "value" : "test_查看无状态应用yaml"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=20016)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.auto_create"
+  }, {
+    "name" : "suite",
+    "value" : "test_容器服务"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "vm"
+  }, {
+    "name" : "thread",
+    "value" : "11924-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.auto_create.test_容器服务"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "3841b8788f49e494",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766198835,
+          "stop" : 1619766199002,
+          "duration" : 167
+        }
+      }, {
+        "uid" : "fa64ec59d89fe641",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766044587,
+          "stop" : 1619766044728,
+          "duration" : 141
+        }
+      }, {
+        "uid" : "bd4def899fec2e20",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619765818856,
+          "stop" : 1619765818998,
+          "duration" : 142
+        }
+      }, {
+        "uid" : "2bf02b8e583f0762",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619765483394,
+          "stop" : 1619765483471,
+          "duration" : 77
+        }
+      } ]
+    },
+    "tags" : [ "run(order=20016)" ]
+  },
+  "source" : "cab5493081b90ec8.json",
+  "parameterValues" : [ ]
+}

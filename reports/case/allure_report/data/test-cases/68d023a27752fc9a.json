@@ -1,0 +1,159 @@
+{
+  "uid" : "68d023a27752fc9a",
+  "name" : "test_创建pvc",
+  "fullName" : "testcase.auto_create.test_容器服务.TestClass#test_创建pvc",
+  "historyId" : "0d9912bced2859a91a12859d16b224b5",
+  "time" : {
+    "start" : 1619769360776,
+    "stop" : 1619769360898,
+    "duration" : 122
+  },
+  "description" : "创建pvc,params:{'name': 'autoaddpvc', 'namespaceId': '{namespace_id}', 'storageClassId': 'baoliucunculei', 'storage': '10Gi', 'accessModes[0]': 'ReadWriteOnce'}",
+  "descriptionHtml" : "<p>创建pvc,params:{'name': 'autoaddpvc', 'namespaceId': '{namespace_id}', 'storageClassId': 'baoliucunculei', 'storage': '10Gi', 'accessModes[0]': 'ReadWriteOnce'}</p>\n",
+  "status" : "failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1619769345549,
+      "stop" : 1619769351322,
+      "duration" : 5773
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1619769344865,
+      "stop" : 1619769345472,
+      "duration" : 607
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1619769365371,
+      "stop" : 1619769365647,
+      "duration" : 276
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "pvc"
+  }, {
+    "name" : "story",
+    "value" : "test_创建pvc"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=20007)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.auto_create"
+  }, {
+    "name" : "suite",
+    "value" : "test_容器服务"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "vm"
+  }, {
+    "name" : "thread",
+    "value" : "11924-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.auto_create.test_容器服务"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 5,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "89a8b0c5fc51d2de",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766197490,
+          "stop" : 1619766197599,
+          "duration" : 109
+        }
+      }, {
+        "uid" : "a21b76a1ddde3aa1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766043290,
+          "stop" : 1619766043444,
+          "duration" : 154
+        }
+      }, {
+        "uid" : "465802ba9b5bc7f5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619765817520,
+          "stop" : 1619765817678,
+          "duration" : 158
+        }
+      }, {
+        "uid" : "a5326c3e6e5ca95f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619765478878,
+          "stop" : 1619765482473,
+          "duration" : 3595
+        }
+      } ]
+    },
+    "tags" : [ "run(order=20007)" ]
+  },
+  "source" : "68d023a27752fc9a.json",
+  "parameterValues" : [ ]
+}

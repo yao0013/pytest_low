@@ -1,0 +1,104 @@
+
+    def exec_init_case(self, case):
+        log.info("**********执行初始化用例**********")
+        try:
+            case = var_add_random_str(case)
+            case = datetime_translate(case)
+            parse_case_vars(case, ivs)
+            dyparam_parse(case, ivs)
+            case = VarReplace(case, [self, ivs, init_object]).var_replace()
+        except Exception as e:
+            log.error(Template("exec_restore_case Exception returned on var_replace,error info: $$e").substitute(e=e))
+
+        init_api_info = {
+            "url": case["url"],
+            "method": case["method"],
+            "params": case["params"],
+            "header": case["header"]
+        }
+
+        try:
+            res = ApiHandler(init_api_info).api_request()
+        except Exception as e:
+            log.error(Template("exec_init_case api request fail,error info: $$e").substitute(e=e))
+            # check.equal(1, 2, "exec_init_case Exception returned on API request")
+            return False
+
+        if res.status_code != 200:
+            log.error(Template("exec_init_case api request fail, the response text is: $$content").substitute(
+                content=res.text))
+            log.error(Template("exec_init_case api response is: $$res").substitute(res=res.json()))
+            # check.equal(1, 2, "exec_init_case api response status_code not equal 200, fail")
+            return False
+
+        try:
+            res_json = res.json()
+        except Exception as e:
+            log.error(Template("exec_init_case 响应内容格式化为json失败，错误信息: $$e").substitute(e=e))
+            return False
+
+        if case.get("interface_var"):
+            var_dict = parse_interface_var(case['interface_var'], res_json)
+            for k, v in var_dict.items():
+                ivs.interface_vars[k] = v
+
+        if case.get('wait_time'):
+            wait_time = float(case['wait_time'])
+            log.info("用例设置了等待时间，等待{}秒,请等待。。。".format(str(wait_time)))
+            time.sleep(wait_time)
+        log.info("**********初始化用例执行完毕**********")
+
+    def exec_restore_case(self, case):
+        log.info("**********执行恢复用例**********")
+        try:
+            case = var_add_random_str(case)
+            case = datetime_translate(case)
+            parse_case_vars(case, ivs)
+            dyparam_parse(case, ivs)
+            case = VarReplace(case, [self, ivs, init_object]).var_replace()
+        except Exception as e:
+            log.error(Template("exec_restore_case Exception returned on var_replace,error info: $$e").substitute(e=e))
+        restore_api_info = {
+            "url": case["url"],
+            "method": case["method"],
+            "params": case["params"],
+            "header": case["header"]
+        }
+
+        try:
+            res = ApiHandler(restore_api_info).api_request()
+        except Exception as e:
+            log.error(Template("exec_restore_case api request fail,error info: $$e").substitute(e=e))
+            # check.equal(1, 2, "exec_restore_case Exception returned on API request")
+            return False
+
+        if res.status_code != 200:
+            log.error(Template("exec_restore_case api request fail, the response text is: $$content").substitute(
+                content=res.text))
+            log.error(Template("exec_restore_case api response is: $$res").substitute(res=res.json()))
+            # check.equal(1, 2, "exec_restore_case api response status_code not equal 200, fail")
+            return False
+
+        try:
+            res_json = res.json()
+        except Exception as e:
+            log.error(Template("exec_restore_case 响应内容格式化为json失败，错误信息: $$e").substitute(e=e))
+            return False
+
+        if case.get("interface_var"):
+            var_dict = parse_interface_var(case['interface_var'], res_json)
+            for k, v in var_dict.items():
+                ivs.interface_vars[k] = v
+
+        if case.get('wait_time'):
+            wait_time = float(case['wait_time'])
+            log.info("用例设置了等待时间，等待{}秒,请等待。。。".format(str(wait_time)))
+            time.sleep(wait_time)
+        log.info("**********恢复用例执行完毕**********")
+
+    def _set_interface_var(self, var):
+
+        for k, v in var.items():
+            ivs.interface_vars[k] = v
+
+

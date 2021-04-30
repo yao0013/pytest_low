@@ -1,0 +1,155 @@
+{
+  "uid" : "8ce89642de1ff118",
+  "name" : "test_删除容器组",
+  "fullName" : "testcase.auto_create.test_容器服务.TestClass#test_删除容器组",
+  "historyId" : "699acd9e90d4d200a6e24ab7026a97df",
+  "time" : {
+    "start" : 1619769365212,
+    "stop" : 1619769365370,
+    "duration" : 158
+  },
+  "description" : "删除容器组,params:{'namespaceId': '{namespace_id}', 'id': '{docker_id}'}",
+  "descriptionHtml" : "<p>删除容器组,params:{'namespaceId': '{namespace_id}', 'id': '{docker_id}'}</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1619769345549,
+      "stop" : 1619769351322,
+      "duration" : 5773
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1619769344865,
+      "stop" : 1619769345472,
+      "duration" : 607
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1619769365371,
+      "stop" : 1619769365647,
+      "duration" : 276
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "test_删除容器组"
+  }, {
+    "name" : "feature",
+    "value" : "容器组"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=20023)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.auto_create"
+  }, {
+    "name" : "suite",
+    "value" : "test_容器服务"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "vm"
+  }, {
+    "name" : "thread",
+    "value" : "11924-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.auto_create.test_容器服务"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "5389ce9629135bf5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766199812,
+          "stop" : 1619766199928,
+          "duration" : 116
+        }
+      }, {
+        "uid" : "d5e7e11b4f44cf8c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766045518,
+          "stop" : 1619766045679,
+          "duration" : 161
+        }
+      }, {
+        "uid" : "86b8e137c4adbc85",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619765819856,
+          "stop" : 1619765820006,
+          "duration" : 150
+        }
+      }, {
+        "uid" : "65add7704294558e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619765486255,
+          "stop" : 1619765486407,
+          "duration" : 152
+        }
+      } ]
+    },
+    "tags" : [ "run(order=20023)" ]
+  },
+  "source" : "8ce89642de1ff118.json",
+  "parameterValues" : [ ]
+}

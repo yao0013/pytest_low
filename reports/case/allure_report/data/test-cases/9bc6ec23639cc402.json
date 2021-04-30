@@ -1,0 +1,155 @@
+{
+  "uid" : "9bc6ec23639cc402",
+  "name" : "test_查看PVC事件",
+  "fullName" : "testcase.auto_create.test_容器服务.TestClass#test_查看PVC事件",
+  "historyId" : "6007cd26668ee97763be530d1ded61d4",
+  "time" : {
+    "start" : 1619769361168,
+    "stop" : 1619769361284,
+    "duration" : 116
+  },
+  "description" : "查看PVC事件,params:{'pageNumber': 1, 'limit': 10, 'clusterId': '{clusterId}', 'namespaceId': '{namespace_id}', 'name': 'autoinitaddpvc', 'kind': 'PersistentVolumeClaim'}",
+  "descriptionHtml" : "<p>查看PVC事件,params:{'pageNumber': 1, 'limit': 10, 'clusterId': '{clusterId}', 'namespaceId': '{namespace_id}', 'name': 'autoinitaddpvc', 'kind': 'PersistentVolumeClaim'}</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1619769345549,
+      "stop" : 1619769351322,
+      "duration" : 5773
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1619769344865,
+      "stop" : 1619769345472,
+      "duration" : 607
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1619769365371,
+      "stop" : 1619769365647,
+      "duration" : 276
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "pvc"
+  }, {
+    "name" : "story",
+    "value" : "test_查看PVC事件"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=20005)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.auto_create"
+  }, {
+    "name" : "suite",
+    "value" : "test_容器服务"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "vm"
+  }, {
+    "name" : "thread",
+    "value" : "11924-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.auto_create.test_容器服务"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "49f1bd3cad695cf4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766197853,
+          "stop" : 1619766197987,
+          "duration" : 134
+        }
+      }, {
+        "uid" : "9f96aa3a1b5f25ed",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619766043665,
+          "stop" : 1619766043766,
+          "duration" : 101
+        }
+      }, {
+        "uid" : "d92b767d79e89503",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619765817923,
+          "stop" : 1619765818028,
+          "duration" : 105
+        }
+      }, {
+        "uid" : "5637f2522a4d449e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619765482681,
+          "stop" : 1619765482763,
+          "duration" : 82
+        }
+      } ]
+    },
+    "tags" : [ "run(order=20005)" ]
+  },
+  "source" : "9bc6ec23639cc402.json",
+  "parameterValues" : [ ]
+}
